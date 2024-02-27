@@ -1,0 +1,1 @@
+lesson 2: String and variables
