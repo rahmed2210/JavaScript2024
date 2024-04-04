@@ -1,4 +1,4 @@
-console.log('\r\n..................((((( Exercise One ))))).......................\r\n')
+console.log('\r\n................((((( Exercise One ))))).....................\r\n')
 
 let num = 34 + 2
 
@@ -10,12 +10,12 @@ console.log(num1)
 
 let age = 42
 let dogYears = (age + 1) / 7
-console.log(dogYears)
+console.log("dogYears = " + dogYears)
 
 
 
-//-----------------------  CHALLENGE   ---------------------------------------------------
-console.log('\r\n..................((((( Challenge Area ))))).......................\r\n')
+//-----------------------  CHALLENGE   ----------------------------------------------
+console.log('\r\n.................((((( Challenge Area ))))).....................\r\n')
 
 // studentScore  18
 // maxScore 20
@@ -25,4 +25,15 @@ let studentScore = 18
 let maxScore = 20
 let percent = (studentScore / maxScore) * 100
 
-console.log(percent)
+console.log("Challenge1 = " + percent)
+
+
+// carSpeed 85
+// speedLimit 65
+// limit 75
+
+let carSpeed = 85
+let speedLimit = 65
+let limit = (carSpeed / speedLimit) * 100
+
+console.log("Challenge2 = " + limit)
