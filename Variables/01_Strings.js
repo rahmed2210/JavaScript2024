@@ -29,3 +29,10 @@ let Country = 'United State'
 let Location = city + ', ' + Country
 
 console.log(Location)
+
+
+let person = 'Rubal'
+let age = 42
+let male = 'My name is ' + person + ', ' + ' i am ' + age + ' years old'
+
+console.log(male)
