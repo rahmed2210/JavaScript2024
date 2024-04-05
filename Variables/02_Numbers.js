@@ -12,7 +12,9 @@ let age = 42
 let dogYears = (age + 1) / 7
 console.log("dogYears = " + dogYears)
 
-
+let cat = 42
+let catYears = (age + 1) / 7
+console.log("Cat Years: = " + dogYears)
 
 
 
