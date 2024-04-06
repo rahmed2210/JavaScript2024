@@ -1,4 +1,4 @@
-console.log('\r\n................((((( Exercise One ))))).....................\r\n')
+console.log('\r\n................((((( Exercise One ))))).....................')
 
 let num = 34 + 2
 
@@ -19,7 +19,7 @@ console.log("Cat Years: = " + dogYears)
 
 
 //-----------------------  CHALLENGE   ----------------------------------------------
-console.log('\r\n.................((((( Challenge Area ))))).....................\r\n')
+console.log('\r\n.................((((( Challenge Area ))))).....................')
 
 // studentScore  18
 // maxScore 20
@@ -40,4 +40,4 @@ let carSpeed = 85
 let speedLimit = 65
 let limit = (carSpeed / speedLimit) * 100
 
-console.log("Challenge2 = " + limit)
+console.log("Challenge2 = " + limit + '\r\n')
