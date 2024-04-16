@@ -37,3 +37,12 @@ let age = 42
 let male = 'My name is ' + person + ', ' + ' i am ' + age + ' years old'
 
 console.log(male + '\r\n')
+
+
+
+
+let ecity = 'Philadelphia'
+let ecountry = 'United States'
+let elocation = city + ', ' + country
+
+console.log(elocation)
