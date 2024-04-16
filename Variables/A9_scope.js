@@ -1,3 +1,4 @@
+
 // Lexical Scope (Static Scope)
 // Global Scope - Defined outside of all code blocks
 // Local Scope - Defined inside a code block
@@ -9,7 +10,7 @@
     // Local Scope (varFour)
   // Local Scope (varThree)
 
-  let varOne = 'varOne'
+  let VarOne = 'varOne'
 
   if (true) {
       console.log(varOne)
@@ -27,3 +28,14 @@
   
   console.log(varTwo)
   
+
+
+  
+// ============================================================================================
+
+// video Notes
+
+let varOne = 'varOne'
+
+if (true) {
+  console.log(varOne)
