@@ -24,3 +24,18 @@ let age = 27
 age = null
 
 console.log(age)
+
+
+
+//==================================================================
+
+// Undefined for variable
+let name1
+
+name1 = 'Jen'
+
+if (name1 === undefined) {
+    console.log('Please provide a name')
+} else {
+    console.log(name1)
+}
