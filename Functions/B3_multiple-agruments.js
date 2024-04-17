@@ -4,7 +4,7 @@ let add = function (a, b, c) {
 }
 
 let result = add(10, 1, 5)
-console.log(result)
+console.log('Result: --> ' + result)
 
 // Deafult arguments
 let getScoreText = function (name = 'Anonymous', score = 0) {
@@ -12,7 +12,7 @@ let getScoreText = function (name = 'Anonymous', score = 0) {
 }
 
 let scoreText = getScoreText(undefined, 99)
-console.log(scoreText)
+console.log('Score Text: --> ' + scoreText)
 
 // Challenge area
 let getTip = function (total, tipPercent = .2) {
@@ -20,4 +20,8 @@ let getTip = function (total, tipPercent = .2) {
 }
 
 let tip = getTip(40, .25)
-console.log(tip)
+console.log('Tip: --> ' + tip)
+
+
+
+//======================================================================
