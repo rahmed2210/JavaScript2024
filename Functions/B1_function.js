@@ -31,3 +31,22 @@ let tempTwo = convertFahrenheitToCelsius(68)
 
 console.log(tempOne)
 console.log(tempTwo)
+
+
+
+// ====================================================================================
+//=====================================================================================
+
+
+// Challenge Area 2
+
+let convertFahrenheitToCelsius1 = function (fahrenheit) {
+    let celsius = (fahrenheit - 32) * 5 / 9
+    return celsius
+}
+
+let tempOne1 = convertFahrenheitToCelsius(32)
+let tempTwo1 = convertFahrenheitToCelsius(68)
+
+console.log(tempOne1)
+console.log(tempTwo1)
