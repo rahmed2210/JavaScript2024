@@ -22,4 +22,11 @@ let gradeCalc = function (score, totalScore) {
 }
 
 let result = gradeCalc(9, 20)
-console.log(result)
+console.log('RESULT: --> ' + result)
+
+
+
+
+
+
+//============================================================
