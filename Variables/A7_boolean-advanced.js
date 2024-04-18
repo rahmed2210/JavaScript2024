@@ -16,6 +16,8 @@ if (isAccountLocked1) {
   console.log('FALSE: --> ' + 'Welcome')
 }  
 
+
+
 // --------------IF \ ELSE IF  \ ELSE-----------------------------
 
 let isAccountLocked2 = false
@@ -28,6 +30,7 @@ if (isAccountLocked2) {
 } else {
   console.log('Welcome')
 }
+
 
 
 // --------------CHALLENGE AREA ELSE--------------------------
@@ -51,6 +54,7 @@ if (Temp <= 35) {
 
 // ---------------------------- NOTES --------------------------------------
 //--------------------------------------------------------------------------
+
 let exIsAccountLocked = false
 let exUserRole = 'user'
 
@@ -62,7 +66,10 @@ if (exIsAccountLocked) {
     console.log('Welcome')
 }
 
-// Challenge area
+
+
+// ---------------------------- CHALLENGE AREA --------------------------------------
+//-----------------------------------------------------------------------------------
 
 let exTemp = 4
 
