@@ -49,20 +49,3 @@ console.log("Challenge2 = " + limit + '\r\n')
 
 
 
-//=============================================================================================
-//=============================================================================================
-
-
-let dage = 26
-let dogYear = (age + 1) / 7
-
-console.log(dogYear)
-
-// Challenge area
-
-let studentScores = 41
-let maxScores = 100
-let percents = (studentScore / maxScore) * 100
-
-console.log(percents)
-
