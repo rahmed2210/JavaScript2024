@@ -11,6 +11,10 @@ console.log("Celsius = " + celsius)
 console.log("Kelvin = " + kelvin)
 
 
+
+//========================================================================
+
+
 let  fahrenheit1 = 45  // 0c - 273.15k
 //  T(°F) = T(°C) × 9/5 + 32
 
