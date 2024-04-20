@@ -28,14 +28,3 @@
   
   console.log(varTwo)
   
-
-
-  
-// ============================================================================================
-
-// video Notes
-
-let varOne = 'varOne'
-
-if (true) {
-  console.log(varOne)
