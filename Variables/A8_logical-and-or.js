@@ -51,7 +51,7 @@ if (isGuestOneVegan && isGuestTwoVegan) {
 }
 
 
-// ex 2
+// example Two
 let isGuestOneVegan2 = true
 let isGuestTwoVegan2 = true
 
@@ -64,7 +64,7 @@ if (isGuestOneVegan2 && isGuestTwoVegan2) {
 }
 
 
-// ex 3
+// example Three
 let isGuestOneVegan3 = false
 let isGuestTwoVegan3 = false
 
@@ -75,6 +75,11 @@ if (isGuestOneVegan3 && isGuestTwoVegan3) {
 } else {
   console.log('Offer up anything on the menu')
 }
+
+
+
+
+
 
 
 
@@ -95,7 +100,11 @@ if (exTemp >= 60 && exTemp <= 90) {
     console.log('Eh. Do what you want')
 }
 
-// Challenge area
+
+
+
+// ----------------------------  Challenge area --------------------------------------
+//------------------------------------------------------------------------------------
 
 let exIsGuestOneVegan = false
 let exIsGuestTwoVegan = false
