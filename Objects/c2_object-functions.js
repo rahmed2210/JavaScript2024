@@ -52,3 +52,32 @@ let bookSummaryTwo = getSummaryReturn(bookTwo)
 console.log(bookSummaryOne.pageCountSummary)
 
 
+
+
+//=========================================================
+
+//============= CHALLENGE AREA ============================
+console.log('\r\n <==  CHALLENGE AREA  ==> \r\n')
+
+// Create a function that return an object
+
+// pass in Fahrenheit and convert to both Celsius and Kelvin 
+// returning an object that contains all three temperatures
+
+/*
+let fahrenheit = 50 
+let celsius = (fahrenheit - 32) * 5 / 9
+let kelvin = (fahrenheit + 459.67) * 5 / 9
+*/
+
+let convertFahrenheit = function (fahrenheit) {
+  return {
+    fahrenheit: fahrenheit,
+    kelvin: (fahrenheit + 459.67) * (5 / 9),
+    celsius: (fahrenheit - 32) * (5 / 9)
+  }
+}
+
+let temps = convertFahrenheit(74)
+console.log(temps)
+
