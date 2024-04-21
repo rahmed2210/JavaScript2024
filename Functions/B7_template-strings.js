@@ -11,3 +11,7 @@ let getTipOne = function (total, tipPercent = .2) {
 
 let tipOne = getTipOne(40, .25)
 console.log(tipOne)
+
+
+
+console.log(`I am ${age} years old. Hey, my name is ${name}!`)
