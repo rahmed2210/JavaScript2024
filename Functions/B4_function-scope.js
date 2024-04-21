@@ -17,3 +17,8 @@ let tempTwo = convertFahrenheitToCelsius(68)
 
 console.log('Temp One: --> ' + tempOne)
 console.log('Temp Two: --> ' + tempTwo)
+
+/*
+  function create a local scope, much like if statement do and
+  function arguments are bound to that newly created local scope
+*/
