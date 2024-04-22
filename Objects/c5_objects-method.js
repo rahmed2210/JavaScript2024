@@ -19,6 +19,3 @@ let restaurant = {
   //  Method is nothing more than an Object property whose value is a function
   // this --> references the Object, the method is undefined on
 
-
-
-
