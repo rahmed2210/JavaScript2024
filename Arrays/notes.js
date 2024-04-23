@@ -25,3 +25,20 @@ console.log(notes)
 console.log('\r\n\---------------------------------------------------- Pop Method')// Blank Space
 console.log(notes.pop())
 console.log(notes)
+
+
+/* 
+ Two method manipulating the array from the start --> Shift & --> Unshift
+
+ Shift Method --> removes the very first item from array
+*/
+console.log('\r\n\---------------------------------------------------- Shift Method')// Blank Space
+console.log(notes.shift())
+console.log(notes)
+
+
+// Unshift Method --> add items on to the beginning of the array
+console.log('\r\n\---------------------------------------------------- Unshift Method')// Blank Space
+notes.unshift('Note 1','My First Notes')
+console.log(notes)
+
