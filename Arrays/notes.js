@@ -65,3 +65,12 @@ console.log(notes)
 notes.splice(4, 1, 'This is the new Third Note')
 console.log(notes.length)
 console.log(notes)
+
+
+// Change the value of a given item using bracket notation
+console.log('\r\n\---------------------------------------------------- Change The Value')// Blank Space
+console.log(notes)
+notes[1] = 'This is the New Note 1'
+console.log(notes)
+
+
