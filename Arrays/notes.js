@@ -74,3 +74,17 @@ notes[1] = 'This is the New Note 1'
 console.log(notes)
 
 
+// Looping Over Arrays
+// forEach --> method takes a single argument and this argument is actually a function
+console.log('\r\n\---------------------------------------------------- Looping Over Arrays')// Blank Space
+console.log(notes)
+/* 
+This function is where we define what to do for each item in the array  --> 
+this function itself is what's going to get executed one time for every item in the array 
+
+index --> is the position of the item in the list and we print as well
+*/
+notes.forEach(function (item, index) {
+      console.log(index)
+      console.log(item)
+})
