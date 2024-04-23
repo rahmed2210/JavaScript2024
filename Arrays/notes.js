@@ -42,3 +42,26 @@ console.log('\r\n\---------------------------------------------------- Unshift M
 notes.unshift('Note 1','My First Notes')
 console.log(notes)
 
+
+// Splice Method --> allow us to add elements to the middle of an array or remove elements from anywhere
+//   -- 1st argument to splice is where you're trying to take the action, you need to provide the index
+console.log('\r\n\---------------------------------------------------- Splice Method')// Blank Space
+console.log(notes.splice(1, 1))
+console.log(notes.length)
+console.log(notes)
+
+
+// Add second item in array
+console.log('\r\n\---------------------------------------------------- Splice Method Add second item')// Blank Space
+console.log(notes)
+notes.splice(1, 1, 'This is the new Second Note')
+console.log(notes.length)
+console.log(notes)
+
+
+// Combine both of them to replace an item
+console.log('\r\n\---------------------------------------------------- Splice Method combine both')// Blank Space
+console.log(notes)
+notes.splice(4, 1, 'This is the new Third Note')
+console.log(notes.length)
+console.log(notes)
