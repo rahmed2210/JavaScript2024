@@ -41,3 +41,18 @@ todos.forEach(function (todos, index) {
     const num = index + 1
     console.log(`${num}. ${todos}`)
 })
+
+
+console.log('\r\n\---------------------------------------------------- For Loop')// Blank Space
+// for Loop ++
+for (let count = 0; count < todos.length; count++) {
+    const num = count + 1
+    const todo = todos[count]
+    console.log(`${num}. ${todo}`)
+}
+
+console.log('\r\n\----------------------------------------------------')// Blank Space
+// for Loop Reverse
+for (let count = todos.length - 1; count > 0; count--) {
+    console.log(todos[count])
+}
