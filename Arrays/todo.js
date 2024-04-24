@@ -37,7 +37,6 @@ console.log('\r\n\----------------------------------------------------')// Blank
 console.log(`You have ${todos.length} todos`)
 // 1. The first item
 // 2. The Second item
-
 todos.forEach(function (todos, index) {
     const num = index + 1
     console.log(`${num}. ${todos}`)

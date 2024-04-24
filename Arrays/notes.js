@@ -88,3 +88,28 @@ notes.forEach(function (item, index) {
       console.log(index)
       console.log(item)
 })
+
+
+
+console.log('\r\n\---------------------------------------------------- Looping Over Arrays ++')// Blank Space
+//  for statement -- which is an alternative looping mechanism
+   // 1st - initialize, 2nd - condition, 3rd - final expression  
+for (let count = 0; count <= 5; count++ ) {
+      console.log(count)
+}
+
+console.log('\r\n\---------------------------------------------------- Looping Over Arrays reverse')// Blank Space
+for (let count = 5; count >= 0; count-- ) {
+      console.log(count)
+}
+
+console.log('\r\n\---------------------------------------------------- ++')// Blank Space
+//  for statement -- which is an alternative looping mechanism
+for (let count = 0; count < notes.length; count++) {
+    console.log(notes[count])
+}
+
+console.log('\r\n\---------------------------------------------------- Looping Over Arrays reverse')// Blank Space
+for (let count = notes.length - 1; count > 0; count--) {
+      console.log(notes[count])
+  }

@@ -12,6 +12,19 @@
         "Zinn",
         "asdfp",
         "asdfpasdfpoijpassword",
+        "onclick",
+        "oncontextmenu",
+        "ondblclick",
+        "onkeydown",
+        "onkeypress",
+        "onkeyup",
+        "onmousedown",
+        "onmouseenter",
+        "onmouseleave",
+        "onmousemove",
+        "onmouseout",
+        "onmouseover",
+        "onmouseup",
         "todos"
     ]
 }
