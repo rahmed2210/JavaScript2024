@@ -43,6 +43,7 @@ todos.forEach(function (todos, index) {
 })
 
 
+/*    -- For Loop --> trying to count in a different order or don't have array
 console.log('\r\n\---------------------------------------------------- For Loop')// Blank Space
 // for Loop ++
 for (let count = 0; count < todos.length; count++) {
@@ -56,3 +57,4 @@ console.log('\r\n\----------------------------------------------------')// Blank
 for (let count = todos.length - 1; count > 0; count--) {
     console.log(todos[count])
 }
+*/
