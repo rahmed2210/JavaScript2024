@@ -90,7 +90,8 @@ notes.forEach(function (item, index) {
 })
 
 
-//--------------------- THE FOR LOOP -------------------------------------------------
+/*--------------------- THE FOR LOOP -------------------------------------------------
+//    -- For Loop --> trying to count in a different order or don't have array
 console.log('\r\n\---------------------------------------------------- The For Loop ++')// Blank Space
 //  for statement -- which is an alternative looping mechanism
    // 1st - initialize, 2nd - condition, 3rd - final expression  
@@ -113,3 +114,6 @@ console.log('\r\n\---------------------------------------------------- The For L
 for (let count = notes.length - 1; count > 0; count--) {
       console.log(notes[count])
   }
+  */
+
+  
