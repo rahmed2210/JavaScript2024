@@ -6,13 +6,14 @@ console.log(notes[1]) // grab first item on the list
 console.log(notes[notes.length - 1]) // grab last item
 // indexes start at zero for arrays
 
+
+
 /* How to manipulate arrays
       - Add new item
       - remove item
       -replace existing item
 ** running through a series of methods on the array
 */
-
 
 // Push Method  --> add something on to the end
 console.log('\r\n\---------------------------------------------------- Push Method')// Blank Space
