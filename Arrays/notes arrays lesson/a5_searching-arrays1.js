@@ -9,21 +9,7 @@ const notes = [{
     body: 'get a new seat'
   }]
   
-  // console.log(notes.pop())
-  // notes.push('My new note')
-  
-  // console.log(notes.shift())
-  // notes.unshift('My first note')
-  
-  // notes.splice(1, 1, 'This is the new second item')
-  
-  // notes[2] = 'this is now the new note 3'
-  
-  // notes.forEach(function (item, index) {
-  //   console.log(index)
-  //   console.log(item)
-  // })
-  
+ 
   console.log(notes.length)
   console.log(notes)
   
@@ -33,9 +19,11 @@ const notes = [{
   // ---> indexOf -- to find if a note exists or maybe locate to replace or delete it
   console.log()
   
-  /*  when comparing two objects, it does not matter if they have the same
+  /*  
+  when comparing two objects, it does not matter if they have the same
   set of objects properties and the same object property values that does
-  not make two object equal  */
+  not make two object equal  
+  */
   
   // what make two object equal is if they're the exact same object in memory
   
