@@ -43,7 +43,7 @@ const account = {
 
 // --> Part 2
 // 1. add income array to account
-// 2. ddIncome method -->description, amount
+// 2. addIncome method -->description, amount
 // 3. tweak getAccountSummary
 
 account.addExpense('rent', 950)
