@@ -1,0 +1,6 @@
+document.querySelector('#remove-all').addEventListener('click', function (e) {
+    document.querySelectorAll('.note').forEach(function ( note) {
+        note.remove()
+    })
+})
+Notes App Lessons
