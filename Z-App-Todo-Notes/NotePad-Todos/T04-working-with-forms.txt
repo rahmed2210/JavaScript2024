@@ -1,3 +1,37 @@
+<<<<<<<<<<<<<<< ====================== HTML ==================================== >>>>>>>>>>>>>>>>>>>>>>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+</head>
+<body>
+    <h1>Todos</h1>
+        
+    <input id="search-text" type="text" placeholder="Filter todos">
+    <div id="todos"></div>
+    <form id="new-todo">
+        <input type="text" placeholder="Something to do" name="text">
+        <button>Add Todo</button>
+    </form>
+
+    
+
+    <script src="todo-app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<<<<<<<<<<<<<<< ====================== JavaScript ==================================== >>>>>>>>>>>>>>>>>>>>>>
+
+
+
 //-->  live-server todo-app
 //-->  http://127.0.0.1:5500/todo-app/index.html   
 
