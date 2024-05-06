@@ -15,18 +15,10 @@
     <button id="create-note">Create Note</button>
     <button id="remove-all">Remove all Notes</button>
 
-
-
     <script src="notes-app.js"></script>
     
 </body>
 </html>
-
-
-
-
-
-
 
 
 
