@@ -31,6 +31,7 @@ const filters = {
 // Render Todos
 const renderTodos = function (todos, filters) {
     let filteredTodos = todos.filter(function (todo) {
+        // avoid two filters call altogether
         const searchTextMatch = todo.text.toLowerCase().includes(filters.searchText.toLowerCase())
         const hideCompletedMatch = !filters.hideCompleted ||!todo.completed
 
