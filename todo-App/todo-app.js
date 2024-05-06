@@ -21,14 +21,32 @@ const todos = [{
 }]
 
 
+// Create Filter
 const filters = {
-    searchText: ''
+    searchText: '',
+    hideCompleted: false
 }
 
+
+// Render Todos
 const renderTodos = function (todos, filters) {
-    const filteredTodos = todos.filter(function (todo) {
+    let filteredTodos = todos.filter(function (todo) {
         return todo.text.toLowerCase().includes(filters.searchText.toLowerCase())
     })
+
+    // setup renderTodos to remove completed item
+    filteredTodos = filteredTodos.filter(function (todo) {
+        return !filters.hideCompleted ||!todo.completed
+    })
+
+    /*   OR
+    filteredTodos = filteredTodos.filter(function (todo) {
+        if (filters.hideCompleted) {
+            return !todo.completed
+        } else {
+            return true
+        }
+    }) */
 
     const incompleteTodos = filteredTodos.filter(function (todo) {
         return !todo.completed
@@ -47,33 +65,42 @@ const renderTodos = function (todos, filters) {
     })
 }
 
+
 renderTodos(todos, filters)
 
+
+
+
+// setup event listener
 document.querySelector('#search-text').addEventListener('input', function (e) {
     filters.searchText = e.target.value
     renderTodos(todos, filters)
 })
 
-//  1.  create a form with a single input for todo text ---> in HTML
 
-//  2.  setup an submit handler and cancel the deafult action
+//  setup an submit handler and cancel the default action
 document.querySelector('#new-todo').addEventListener('submit', function (e) {
     e.preventDefault()
-//    3.  Add a new item to the todos array with that text data (completed value of false)
+//    Add a new item to the todos array with that text data (completed value of false)
     todos.push({
         text: e.target.elements.text.value,
         completed: false
     })
-    //  4.  Rerender the application
+    //  Rerender the application
     renderTodos(todos, filters) 
-    //  5.  clear input field value
+    //  clear input field value
     e.target.elements.text.value = '' // blank mean to clear the field
+})
+
+document.querySelector('#hide-completed').addEventListener('change', function (e) {   
+    filters.hideCompleted = e.target.checked
+    renderTodos(todos, filters)
 })
 
 
 
-//  1.  create a form with a single input for todo text ---> in HTML
-//  2.  setup an submit handler and cancel the deafult action
-//  3.  Add a new item to the todos array with that text data (completed value of false)
-//  4.  Rerender the application
-//  5.  clear input field value
+//  1.  Create a checkbox and setup event listen --> hide completed
+//  2.  create new hidecompleted filter (default false)
+//  3.  update hideCompleted an rerender list on checkbox changes
+//  4.  setup renderTodos to remove completed item
+
