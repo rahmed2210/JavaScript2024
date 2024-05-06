@@ -43,11 +43,6 @@ document.querySelector('#search-text').addEventListener('input', function (e) {
     renderNotes(notes, filters)
 })
 
-document.querySelector('#name-form').addEventListener('submit', function (e) {
-    // cancel the default behavior of the form --tell browser not to refresh and not add anything in url
-    e.preventDefault()
-    // access to data and printing to console
-   console.log(e.target.elements.firstName.value)
-   // clearing the form field (printing the name than wiping the data)
-   e.target.elements.firstName.value = ''
-})
+document.querySelector('#for-fun').addEventListener('change', function (e) {
+    console.log(e.target.checked)
+ })
