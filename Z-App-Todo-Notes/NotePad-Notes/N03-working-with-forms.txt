@@ -1,3 +1,41 @@
+<<<<<<<<<<<<<<< ====================== HTML ==================================== >>>>>>>>>>>>>>>>>>>>>>
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+</head>
+<body>
+    <h1>Notes App</h1>
+    <h2>Take notes and never forget</h2>
+    <input id="search-text" type="text" placeholder="Filter todos">
+    <div id="notes"></div>
+    <button id="create-note">Create Note</button>
+    <form id="name-form">
+        <input type="text" placeholder="first name" name="firstName">
+        <button>Submit</button>
+    </form>
+
+
+
+    <script src="notes-app.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+<<<<<<<<<<<<<<< ====================== JavaScript ==================================== >>>>>>>>>>>>>>>>>>>>>>
+
+
+
 const notes = [{
     title: 'My next trip',
     body: 'I would like to go to Spain'
