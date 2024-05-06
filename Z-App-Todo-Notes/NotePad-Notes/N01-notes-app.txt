@@ -49,3 +49,10 @@ document.querySelector('#add-todo').addEventListener('click', function (e) {
     console.log('Add a new todo')
  //   e.target.textContent = 'added new to do to the list'
 })
+
+
+// Listen for new todo creation
+document.querySelector('#add-todo').addEventListener('click', function (e) {
+    console.log('Add a new todo')
+ //   e.target.textContent = 'added new to do to the list'
+})
