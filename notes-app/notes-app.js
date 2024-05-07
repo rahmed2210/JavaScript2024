@@ -1,48 +1,16 @@
-const notes = [{
-    title: 'My next trip',
-    body: 'I would like to go to Spain'
-}, {
-    title: 'Habbits to work on',
-    body: 'Exercise. Eating a bit better.'
-}, {
-    title: 'Office modification',
-    body: 'Get a new seat'
-}]
+let notes = []
 
 const filters = {
     searchText: ''
 }
 
-/* Local Storage global variable
-// Crud
-localStorage.setItem('location', 'Paterson')
-// read
-console.log(localStorage.getItem('location'))
-// delete data
-localStorage.removeItem('location')
-// delete everything
-localStorage.clear() */
+// Check for existing saved data
+const notesJSON = localStorage.getItem('notes')
 
-/* 
-const user = {
-    name: 'rubal',
-    age = 27
+
+if (notesJSON !== null ) {
+    notes =JSON.parse(notesJSON)
 }
-*/
-
-//  JavaScript Object Notation -- is going to be a way for us to convert our object into a string
-//   Stringify --> takes in your object or your array or what else, and it return a string so i can pass into
-/*
-const userJSON = JSON.stringify(user)
-console.log(userJSON)
-localStorage.setItem('user', userJSON) 
-*/
-
-const userJSON = localStorage.getItem('user')
-const user =JSON.parse(userJSON)
-console.log(`${user.name} is ${user.age}`)
-
-
 
 
 // render notes function -- takes all of the notes and filters and it figures out which one matches the filters
@@ -57,7 +25,14 @@ const renderNotes = function (notes, filters) {
     // add filtering notes
     filteredNotes.forEach(function (note) {
         const noteE1 =document.createElement('p')
-        noteE1.textContent = note.title
+
+
+        if (note.title.length> 0) {
+            noteE1.textContent = note.title
+        } else {
+            noteE1.textContent = "Unnamed note"
+        }
+
         document.querySelector('#notes').appendChild(noteE1)
     })
 }
@@ -65,7 +40,12 @@ const renderNotes = function (notes, filters) {
 renderNotes(notes, filters)
 
 document.querySelector('#create-note').addEventListener('click', function (e) {
-    e.target.textContent = 'The button was clicked'
+    notes.push({
+        title: '',
+        body: ''
+    }) 
+    localStorage.setItem('notes', JSON.stringify(notes)) // save the new notes array to local storage
+    renderNotes(notes, filters)
 })
 
 // input event is going to fire on every single character changes
