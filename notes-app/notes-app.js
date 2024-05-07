@@ -13,6 +13,38 @@ const filters = {
     searchText: ''
 }
 
+/* Local Storage global variable
+// Crud
+localStorage.setItem('location', 'Paterson')
+// read
+console.log(localStorage.getItem('location'))
+// delete data
+localStorage.removeItem('location')
+// delete everything
+localStorage.clear() */
+
+/* 
+const user = {
+    name: 'rubal',
+    age = 27
+}
+*/
+
+//  JavaScript Object Notation -- is going to be a way for us to convert our object into a string
+//   Stringify --> takes in your object or your array or what else, and it return a string so i can pass into
+/*
+const userJSON = JSON.stringify(user)
+console.log(userJSON)
+localStorage.setItem('user', userJSON) 
+*/
+
+const userJSON = localStorage.getItem('user')
+const user =JSON.parse(userJSON)
+console.log(`${user.name} is ${user.age}`)
+
+
+
+
 // render notes function -- takes all of the notes and filters and it figures out which one matches the filters
 const renderNotes = function (notes, filters) {
     const filteredNotes = notes.filter(function (note) {
