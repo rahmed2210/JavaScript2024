@@ -1,24 +1,4 @@
-//-->  live-server todo-app
-//-->  http://127.0.0.1:5500/todo-app/index.html   
-
-
-
-const todos = [{
-    text: 'Order cat food',
-    completed: false
-}, {
-    text: 'Clean kitchen',
-    completed: true
-}, {
-    text: 'Buy food',
-    completed: true
-}, {
-    text: 'Do work',
-    completed: false
-}, {
-    text: 'Exercise',
-    completed: true
-}]
+let todos = []
 
 
 // Create Filter
@@ -27,6 +7,12 @@ const filters = {
     hideCompleted: false
 }
 
+
+const todosJSON = localStorage.getItem('todos')
+
+if (todosJSON !== null) {
+    todos = JSON.parse(todosJSON)
+}
 
 // Render Todos
 const renderTodos = function (todos, filters) {
@@ -37,7 +23,6 @@ const renderTodos = function (todos, filters) {
 
         return searchTextMatch && hideCompletedMatch
     })
-
 
     const incompleteTodos = filteredTodos.filter(function (todo) {
         return !todo.completed
@@ -60,8 +45,6 @@ const renderTodos = function (todos, filters) {
 renderTodos(todos, filters)
 
 
-
-
 // setup event listener
 document.querySelector('#search-text').addEventListener('input', function (e) {
     filters.searchText = e.target.value
@@ -77,6 +60,7 @@ document.querySelector('#new-todo').addEventListener('submit', function (e) {
         text: e.target.elements.text.value,
         completed: false
     })
+    localStorage.setItem('todos', JSON.stringify(todos))
     //  Rerender the application
     renderTodos(todos, filters) 
     //  clear input field value
@@ -87,11 +71,3 @@ document.querySelector('#hide-completed').addEventListener('change', function (e
     filters.hideCompleted = e.target.checked
     renderTodos(todos, filters)
 })
-
-
-
-//  1.  Create a checkbox and setup event listen --> hide completed
-//  2.  create new hidecompleted filter (default false)
-//  3.  update hideCompleted an rerender list on checkbox changes
-//  4.  setup renderTodos to remove completed item
-
