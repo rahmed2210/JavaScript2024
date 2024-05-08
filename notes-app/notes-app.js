@@ -1,40 +1,7 @@
-let notes = []
+const notes = getSavedNotes()
 
 const filters = {
     searchText: ''
-}
-
-// Check for existing saved data
-const notesJSON = localStorage.getItem('notes')
-
-
-if (notesJSON !== null ) {
-    notes =JSON.parse(notesJSON)
-}
-
-
-// render notes function -- takes all of the notes and filters and it figures out which one matches the filters
-const renderNotes = function (notes, filters) {
-    const filteredNotes = notes.filter(function (note) {
-        return note.title.toLowerCase().includes(filters.searchText.toLowerCase())
-    })
-
-    // to clear that div entirely when adding new note
-    document.querySelector('#notes').innerHTML = ''
-    
-    // add filtering notes
-    filteredNotes.forEach(function (note) {
-        const noteE1 =document.createElement('p')
-
-
-        if (note.title.length> 0) {
-            noteE1.textContent = note.title
-        } else {
-            noteE1.textContent = "Unnamed note"
-        }
-
-        document.querySelector('#notes').appendChild(noteE1)
-    })
 }
 
 renderNotes(notes, filters)
@@ -44,12 +11,12 @@ document.querySelector('#create-note').addEventListener('click', function (e) {
         title: '',
         body: ''
     }) 
-    localStorage.setItem('notes', JSON.stringify(notes)) // save the new notes array to local storage
+    saveNotes(notes)
     renderNotes(notes, filters)
 })
 
 // input event is going to fire on every single character changes
-//     --using input event with our text based inputs, allowing us to access that latest information
+//  --using input event with our text based inputs, allowing us to access that latest information
 document.querySelector('#search-text').addEventListener('input', function (e) {
     filters.searchText = e.target.value
     renderNotes(notes, filters)
