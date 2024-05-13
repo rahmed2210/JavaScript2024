@@ -22,7 +22,7 @@ const renderTodos = function (todos, filters) {
         // avoid two filters call altogether
         const searchTextMatch = todo.text.toLowerCase().includes(filters.searchText.toLowerCase())
         const hideCompletedMatch = !filters.hideCompleted || !todo.completed
-
+        
         return searchTextMatch && hideCompletedMatch
     })
 
